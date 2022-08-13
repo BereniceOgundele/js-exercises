@@ -16,6 +16,27 @@ Write JavaScript below that logs:
 
 */
 
+let allPTags = document.querySelectorAll("p");
+
+console.log(allPTags);
+
+let divElement = document.querySelector("div");
+
+console.log(divElement);
+
+// let jumbotron = document.querySelector("#jumbotron-text");
+let idTest = "jumbotron-text"
+let jumbotron = document.getElementById(idTest);
+console.log("hello",jumbotron);
+
+let primaryContent = document.querySelectorAll(".primary-content p");
+console.log(primaryContent);
+
+for(let i = 0; i < primaryContent.length; i++) {
+    console.log(primaryContent[i])
+}
+//for each array method
+primaryContent.forEach(item => console.log(item));
 
 /*
 Task 2
